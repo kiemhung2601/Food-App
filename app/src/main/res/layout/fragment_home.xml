@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:layout_height="?attr/actionBarSize">
+
+        <TableLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/search"
+                android:hint="@string/search"
+                android:inputType="text"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/custom_logo_search"
+                android:drawablePadding="@dimen/padding_item_edit_text"
+                android:drawableRight="@drawable/ic_search"
+                android:paddingHorizontal="@dimen/padding_edit_text"
+                android:paddingVertical="@dimen/padding_item_edit_text"
+                android:background="@drawable/custom_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:contentDescription="Button cart"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/size_icon"
+                android:layout_height="@dimen/size_icon"
+                android:background="@android:color/transparent"
+                android:layout_marginHorizontal="@dimen/padding_icon_appbar"
+                app:srcCompat="@drawable/ic_cart" />
+            </TableRow>
+        </TableLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--  Banner   -->
+            <RelativeLayout
+                android:layout_marginTop="@dimen/margin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_view_flipper">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:layout_marginHorizontal="@dimen/margin_layout"
+                    android:id="@+id/vp_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/ci_banner"
+                    app:ci_height="8dp"
+                    app:ci_width="8dp"
+                    app:ci_drawable="@drawable/custom_indicator"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/margin_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+
+            </RelativeLayout>
+
+            <!--  Menu-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/margin_layout"
+                android:layout_marginHorizontal="@dimen/margin_layout"
+                android:id="@+id/rcv_menu_home"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--  Ratings  -->
+            <TextView
+                android:layout_margin="@dimen/margin_layout"
+                android:textStyle="bold"
+                android:textSize="@dimen/tilte_large"
+                android:text="@string/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginHorizontal="@dimen/margin_layout"
+                android:id="@+id/rcv_ratings_home"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--  Suggest food  -->
+            <TextView
+                android:layout_margin="@dimen/margin_layout"
+                android:textStyle="bold"
+                android:textSize="@dimen/tilte_large"
+                android:text="@string/suggest_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/margin_layout"
+                android:id="@+id/rcv_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

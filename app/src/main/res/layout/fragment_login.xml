@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fitsSystemWindows="true"
+        tools:context=".fragment.LoginFragment">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_background">
+
+            <ImageView
+                android:id="@+id/ic_logo"
+                android:layout_width="@dimen/size_logo"
+                android:layout_height="@dimen/size_logo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                app:srcCompat="@drawable/ic_logo" />
+
+            <TextView
+                android:layout_marginBottom="@dimen/margin_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/largest_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/main_color"
+                android:text="@string/login"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_account"
+                android:layout_marginBottom="@dimen/margin_layout"
+                android:layout_marginHorizontal="@dimen/margin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_account"
+                    android:hint="@string/account"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/padding_item_edit_text"
+                    android:paddingLeft="@dimen/padding_edit_text"
+                    android:background="@drawable/custom_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                android:layout_marginBottom="@dimen/margin_layout"
+                android:layout_marginHorizontal="@dimen/margin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="@dimen/padding_item_edit_text"
+                    android:paddingLeft="@dimen/padding_edit_text"
+                    android:background="@drawable/custom_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:background="@drawable/gradient_button"
+                app:backgroundTint="@null"
+                android:layout_marginBottom="@dimen/margin_layout"
+                android:layout_marginHorizontal="@dimen/margin_layout"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginHorizontal="@dimen/margin_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:textColor="@color/main_color"
+                    android:text="@string/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_forgot_password"
+                    android:clickable="true"
+                    android:textColor="@color/main_color"
+                    android:text="@string/forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

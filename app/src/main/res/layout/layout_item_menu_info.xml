@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_main_menu"
+        android:src="@drawable/ic_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <TextView
+        android:id="@+id/tv_main_menu"
+        android:layout_marginLeft="@dimen/margin_item_10"
+        android:text="Thông tin cá nhân"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:src="@drawable/ic_next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+</LinearLayout>

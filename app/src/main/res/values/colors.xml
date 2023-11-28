@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#FF487B39</color>
+    <color name="second_color">#FF014a95</color>
+    <color name="green_light">#FF79A06E</color>
+    <color name="green_light2">#FFCDDEB5</color>
+    <color name="chartreuse">#FFF5EAD2</color>
+    <color name="blue_light">#FFBBDEFB</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF951819</color>
+    <color name="grey">#FF979797</color>
+    <color name="green_for_stroke">#FFDAECCF</color>
+    <color name="yellow">#FFFFE103</color>
+</resources>

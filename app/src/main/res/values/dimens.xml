@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    layout size-->
+    <dimen name="margin_layout">16dp</dimen>
+    <dimen name="height_edit_text">48dp</dimen>
+    <dimen name="radius_edit_text">12dp</dimen>
+    <dimen name="padding_edit_text">10dp</dimen>
+    <dimen name="radius_button">30dp</dimen>
+    <dimen name="line_button">1dp</dimen>
+    <dimen name="padding_item_edit_text">5dp</dimen>
+    <dimen name="padding_icon_appbar">5dp</dimen>
+    <dimen name="height_view_flipper">200dp</dimen>
+    <dimen name="radius_image">16dp</dimen>
+    <dimen name="margin_item_10">10dp</dimen>
+    <dimen name="margin_item_5">5dp</dimen>
+
+    <!--    icon size-->
+    <dimen name="size_logo">150dp</dimen>
+    <dimen name="size_icon">36dp</dimen>
+
+    <!--    text size-->
+    <dimen name="largest_text_size">30sp</dimen>
+    <dimen name="tilte_largest">22sp</dimen>
+    <dimen name="tilte_large">20sp</dimen>
+    <dimen name="title">16sp</dimen>
+    <dimen name="body">14sp</dimen>
+    <dimen name="link">12sp</dimen>
+</resources>
